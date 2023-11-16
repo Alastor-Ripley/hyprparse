@@ -19,7 +19,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: sudo apt-get install rustup
-      run: rustup default nightly
-      run: cargo update
-      run: cargo build --verbose
+      run: sudo apt-get install rustup && rustup default nightly && cargo update && cargo build --verbose
+
