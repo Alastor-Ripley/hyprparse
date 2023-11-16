@@ -19,5 +19,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh  && -y && source $HOME/.cargo/env && sudo apt-get update && sudo apt-get upgrade && sudo apt install build-essential  && rustup default nightly && cargo update && cargo build --verbose
+      run: curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh -1 && source $HOME/.cargo/env && sudo apt-get update && sudo apt-get upgrade && sudo apt install build-essential  && rustup default nightly && cargo update && cargo build --verbose
 
